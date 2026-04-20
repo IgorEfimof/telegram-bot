@@ -3,7 +3,8 @@ import telebot
 from telebot import types
 
 # --- НАСТРОЙКИ ---
-TOKEN = "8423103342:AAFr5LiWPnh6Z_N7rmdpDTWun3wWPNwNpnM"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(TOKEN)
 
 # Хранилище состояний пользователя (временное, в памяти)
